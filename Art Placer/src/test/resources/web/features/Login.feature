@@ -34,4 +34,4 @@ Feature: Login
       | email                      | mensaje                                          |
       | email_incorrecto@gmail.com | The email you entered does not belong to a user. |
       | artplacer.email            | We sent you an email                             |
-      |                            | Email is required.                               |
+      |                            | Email  is required.                              |
