@@ -18,5 +18,5 @@ public class SignUpSteps {
     public void formularioPago() {SignUpService.formularioPago();}
 
     @And ("el usuario selecciona el plan de subscripcion {string}")
-    public void seleccionarPlans() {SignUpService.seleccionPlan();}
+    public void seleccionarPlans(String nombreDelPlan) {SignUpService.seleccionPlan(nombreDelPlan);}
 }

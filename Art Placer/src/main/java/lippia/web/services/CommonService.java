@@ -15,6 +15,6 @@ public class CommonService extends ActionManager {
     public static void verificarTextoVisible(String textoEsperado) {
         String xpathDinamico = String.format("xpath://*[contains(text(), '%s')]", textoEsperado);
         waitVisibility(xpathDinamico);
-        Assert.assertTrue(isVisible(xpathDinamico), "Error: El texto esperado no esta renderizado en el DOM.");
+        Assert.assertTrue(isVisible(xpathDinamico), "Error: El texto esperado no esta.");
     }
 }

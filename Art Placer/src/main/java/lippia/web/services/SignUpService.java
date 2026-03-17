@@ -5,18 +5,22 @@ import com.crowdar.core.actions.ActionManager;
 import lippia.web.constants.SignUpConstants;
 import org.testng.Assert;
 
+
+
 public class SignUpService extends ActionManager {
     public static void registroUsuario() {
         String emailDinamico = "rama.test" + System.currentTimeMillis() + "@gmail.com";
-        String password = PropertyManager.getProperty("art.placer.password");
+        String password = PropertyManager.getProperty("artplacer.password");
         setInput(SignUpConstants.INPUT_FIRSTNAME, "Test");
         setInput(SignUpConstants.INPUT_LASTNAME, "Test");
         setInput(SignUpConstants.INPUT_EMAIL, emailDinamico);
         setInput(SignUpConstants.INPUT_PASSWORD, password);
     }
 
-    public static void seleccionarPlan() {
-        click(SignUpConstants.BUTTON_ADVANCED);
+    public static void seleccionPlan(String plan) {
+        String xpathJerarquico = String.format(SignUpConstants.BUTTON_PLAN_DINAMICO, plan);
+        waitClickable(xpathJerarquico);
+        click(xpathJerarquico);
     }
 
     public static void formularioPago() {
@@ -26,6 +30,6 @@ public class SignUpService extends ActionManager {
         setInput(SignUpConstants.INPUT_CREDIT_CARD, creditCard);
         setInput(SignUpConstants.INPUT_EXP_DATE, expDate);
         setInput(SignUpConstants.INPUT_CVC, cvc);
-        click(SignUpConstants.BUTTON_ADVANCED);
     }
+
 }

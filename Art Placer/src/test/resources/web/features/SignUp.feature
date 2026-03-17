@@ -12,3 +12,4 @@ Feature: Registro de usuarios
     And el usuario completa el formulario de pago con datos validos
     And el usuario hace click en el boton "Start free trial"
     Then se muestra el mensaje "Congratulations!"
+
