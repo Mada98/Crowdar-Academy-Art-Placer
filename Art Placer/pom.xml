@@ -42,6 +42,11 @@
 		<web-app.url>https://app.saturn.artplacer.com/</web-app.url>
         <artplacer.user.email>micefo2801@indevgo.com</artplacer.user.email>
         <artplacer.user.password>Password123</artplacer.user.password>
+		<singup.url>https://web.saturn.artplacer.com/signup/</singup.url>
+		<credit.card>4111111111111111</credit.card>
+		<exp.date>1226</exp.date>
+		<cvc>123</cvc>
+
 	</properties>
 	<profiles>
 

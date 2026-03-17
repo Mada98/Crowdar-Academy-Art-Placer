@@ -23,7 +23,7 @@ Feature: Login
       |                            | passowrd            | The entered credentials are invalid. |
       |                            |                     | The entered credentials are invalid. |
 
-  @forgotPassword
+  @ForgotPassword
   Scenario Outline: Validacion de recuperar contrasena
     When el usuario hace click en el enlace "Forgot password?"
     And el usuario ingresa "<email>" en el campo de recuperacion

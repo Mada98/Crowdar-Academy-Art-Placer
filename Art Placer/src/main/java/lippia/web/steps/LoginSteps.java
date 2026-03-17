@@ -8,7 +8,7 @@ public class LoginSteps {
 
     @Given("el usuario se encuentra en la pagina de login de ArtPlacer")
     public void home() {
-        ArtPlacerService.navegarWeb();
+        ArtPlacerService.navegarWebLogin();
     }
 
     @When("el usuario con onboarding completo se autentica en la aplicacion")
